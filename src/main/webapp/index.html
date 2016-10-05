@@ -1,0 +1,52 @@
+
+<html>
+<head>
+    <title>Simple Calculator</title>
+  Mahalaxmi Burji
+</head>
+<body>
+Enter number 1 : <input type="number" id="num1" required autofocus>
+Enter number 2 : <input type="number" id="num2" required>
+  
+ <input type="button" value="ADD" onclick="add();">
+  
+  <input type="button" value="SUB" onclick="add1();">
+  
+  <input type="button" value="MUL" onclick="add2();">
+  
+  <input type="button" value="DIVISION" onclick="add3();">
+ <div id="result">
+  </div>
+  
+  <script>
+ function add() {
+      var n1=document.getElementById("num1").value;
+   	var n2=document.getElementById("num2").value;
+ 		var sum=+n1 + +n2;   
+   	alert("Sum is "+sum);
+   	document.getElementById("result").innerText = sum;
+ }
+    function add1() {
+      var n1=document.getElementById("num1").value;
+   	var n2=document.getElementById("num2").value;
+ 		var sum=+n1 - +n2;   
+   	alert("Difference is "+sum);
+   	document.getElementById("result").innerText = sum;
+ }
+    function add2() {
+      var n1=document.getElementById("num1").value;
+   	var n2=document.getElementById("num2").value;
+ 		var sum=+n1 * +n2;   
+   	alert("Product is "+sum);
+   	document.getElementById("result").innerText = sum;
+ }
+    function add3() {
+      var n1=document.getElementById("num1").value;
+   	var n2=document.getElementById("num2").value;
+ 		var sum=+n1 / +n2;   
+   	alert("Division is "+sum);
+   	document.getElementById("result").innerText = sum;
+ }
+  </script>
+</body>
+</html>
